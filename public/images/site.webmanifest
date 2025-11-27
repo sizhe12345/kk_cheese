@@ -1,0 +1,21 @@
+{
+    "name": "KK Cheese - Kulit Kulit",
+    "short_name": "KK Cheese",
+    "description": "The crispiest, most addictive popiah skin snacks in Malaysia",
+    "icons": [{
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFC300",
+    "background_color": "#FDF8F5",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
