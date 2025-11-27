@@ -17,7 +17,7 @@ const PRODUCTS: Product[] = [
     imageColor: 'bg-brand-yellow',
     accentColor: 'text-brand-yellow',
     badge: 'BEST SELLER',
-    images: ['/salted_egg.jpg', '/salted_egg1.jpeg', '/salted_egg2.jpeg']
+    images: ['/images/salted_egg.jpg', '/images/salted_egg1.jpeg', '/images/salted_egg2.jpeg']
   },
   {
     id: '2',
@@ -29,7 +29,7 @@ const PRODUCTS: Product[] = [
     imageColor: 'bg-brand-red',
     accentColor: 'text-brand-red',
     badge: 'NEW ARRIVAL',
-    images: ['/tomato.jpeg', '/tomato1.jpeg', '/tomato2.jpeg']
+    images: ['/images/tomato.jpeg', '/images/tomato1.jpeg', '/images/tomato2.jpeg']
   },
   {
     id: '3',
@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
     imageColor: 'bg-brand-orange',
     accentColor: 'text-brand-orange',
     badge: 'KIDS LOVE IT',
-    images: ['/cheese.jpeg', '/cheese1.jpeg']
+    images: ['/images/cheese.jpeg', '/images/cheese1.jpeg']
   }
 ];
 
@@ -112,7 +112,7 @@ const Navbar = () => {
              {/* Logo Icon */}
             <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center -rotate-3 group-hover:rotate-0 transition-transform overflow-hidden">
               <img 
-                src="/logo.png" 
+                src="/images/logo.png" 
                 alt="KK Cheese Logo" 
                 className="w-8 h-8 object-contain"
               />
@@ -479,7 +479,7 @@ const HomePage = () => {
               
               {/* Hero Image */}
               <img 
-                src="/hero1.PNG" 
+                src="/images/hero1.PNG" 
                 alt="KK Cheese Hero" 
                 className="relative z-10 w-full max-w-[400px] mx-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer"
               />
@@ -524,7 +524,7 @@ const HomePage = () => {
                 {/* Halal Certification - Smaller and below button */}
                 <div className="inline-flex items-center gap-2 bg-brand-green/10 border border-brand-green px-3 py-1 rounded-lg mt-4">
                   <img 
-                    src="/halal.png" 
+                    src="/images/halal.png" 
                     alt="Halal Certified" 
                     className="w-4 h-4 object-contain"
                   />
@@ -582,7 +582,7 @@ const HomePage = () => {
               { title: "Paper Thin", desc: "Hand-fried to perfection, lighter than air.", color: "bg-brand-yellow" },
               { title: "Flavor Bomb", desc: "No skimping on seasoning. Every bite hits.", color: "bg-brand-red" },
               { title: "Local Pride", desc: "Made in Malaysia, for Malaysian tastebuds.", color: "bg-brand-orange" },
-              { title: "Halal Certified", desc: "Verified halal ingredients and processes.", color: "bg-brand-green", icon: "/halal.png" },
+              { title: "Halal Certified", desc: "Verified halal ingredients and processes.", color: "bg-brand-green", icon: "/images/halal.png" },
             ].map((item, i) => (
               <div key={i} className={`p-6 rounded-2xl border-2 border-brand-dark shadow-hard ${item.color}`}>
                 {item.icon && (
@@ -614,25 +614,25 @@ const HomePage = () => {
                 id: 1, 
                 title: "Taste Test", 
                 description: "First bite reaction", 
-                video: "/video1.mp4"
+                video: "/images/video1.mp4"
               },
               { 
                 id: 2, 
                 title: "Crispy Crunch", 
                 description: "Listen to that crunch!", 
-                video: "/video2.mp4"
+                video: "/images/video2.mp4"
               },
               { 
                 id: 3, 
                 title: "Making Process", 
                 description: "How we make it", 
-                video: "/video3.mp4"
+                video: "/images/video3.mp4"
               },
               { 
                 id: 4, 
                 title: "Product Showcase", 
                 description: "All flavors featured", 
-                video: "/video4.mp4"
+                video: "/images/video4.mp4"
               }
             ].map((item) => (
               <VideoCard key={item.id} video={item} />
@@ -898,7 +898,7 @@ const Footer = () => (
       <div className="flex flex-col items-center mb-4">
         <div className="w-16 h-16 bg-brand-cream rounded-lg flex items-center justify-center mb-3">
           <img 
-            src="/logo.png" 
+            src="/images/logo.png" 
             alt="KK Cheese Logo" 
             className="w-12 h-12 object-contain"
           />
